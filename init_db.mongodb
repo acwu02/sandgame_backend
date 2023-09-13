@@ -1,0 +1,8 @@
+// TODO: If you need to initialize your database with some documents, uncomment/adjust these lines and add insert statements.
+
+db = connect("sandgame");
+db.dropDatabase();
+db.saves.insertOne({ id: "save1", isUsed: "false", data: {} })
+db.saves.insertOne({ id: "save2", isUsed: "false", data: {} })
+db.saves.insertOne({ id: "save3", isUsed: "false", data: {} })
+db.saves.insertOne({ id: "save4", isUsed: "false", data: {} })

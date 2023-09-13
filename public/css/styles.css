@@ -1,0 +1,46 @@
+:root {
+    background: #EAB1E9;
+    font-family: monospace;
+    text-align: center;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: monospace;
+    background-color: white;
+    border-color: rgb(119, 0, 255);
+    width: 15em;
+    margin: 0;
+    justify-content: center;
+}
+
+canvas {
+    background: black;
+    display: block;
+}
+
+#loginForm {
+    text-align: center;
+}
+
+/* NOTE: Since I have defined the canvas's height and width in HTML,
+I instead dynamically interface with these values in game.js. */
+@media screen and (max-width: 500px) {
+    button {
+        width: calc(0.2 * 100vw);
+        font-size: x-small;
+    }
+    h1, h2 {
+        font-size: medium;
+    }
+    div {
+        font-size: medium;
+    }
+}

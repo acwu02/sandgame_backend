@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+
+    <title>Sand Game</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://accounts.google.com/gsi/client" defer></script>
+    <script type="module" src="/js/game.js"></script>
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+  </head>
+  <body>
+    <h1>Sand Game</h1>
+
+    <div>Directions: Click to place elements. Change elements by clicking the buttons below.</div>
+
+    <br>
+
+    <div id="elements">
+      <button class="elementButton" id="sand">Sand</button>
+      <button class="elementButton" id="water">Water</button>
+      <button class="elementButton" id="stone">Stone</button>
+      <button class="elementButton" id="erase">Erase</button>
+    </div>
+
+    <br>
+
+    <!-- NOTE: defining height/width in CSS results in blurry drawings,
+      so I have to define them in HTML -->
+    <!-- Source: https://stackoverflow.com/questions/8696631/canvas-drawings-like-lines-are-blurry-->
+    <canvas id="canvas" width="500" height="250" aria-label="Game screen" role="img"></canvas>
+
+    <h2>Save Data</h2>
+
+    <div id="saveFiles">
+      <button class="saveButton" id="save1">Save 1: Empty</button>
+      <button class="saveButton" id="save2">Save 2: Empty</button>
+      <button class="saveButton" id="save3">Save 3: Empty</button>
+      <button class="saveButton" id="save4">Save 4: Empty</button>
+    </div>
+
+    <div id="deleteFiles">
+      <button class="deleteButton" id="delete1">Delete Save 1</button>
+      <button class="deleteButton" id="delete2">Delete Save 2</button>
+      <button class="deleteButton" id="delete3">Delete Save 3</button>
+      <button class="deleteButton" id="delete4">Delete Save 4</button>
+    </div>
+
+    <br>
+
+    <div id="accessmessage"></div>
+
+    <br>
+
+    <button id="access">Turn on accessibility</button>
+
+    <br>
+
+    <div id="loginForm"></div>
+
+    <br>
+
+    <div id="welcome"></div>
+
+  </body>
+</html>
